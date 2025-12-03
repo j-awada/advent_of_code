@@ -1,9 +1,9 @@
-struct InitiDial {
+struct InitDial {
     value: i32,
     zeros: i32,
 }
 
-impl InitiDial {
+impl InitDial {
     fn turn_the_dial_part_1(&mut self, direction: &str, distance_str: &str) {
         let distance: i32 = distance_str.parse().unwrap();
         let temp: i32 = match direction {
@@ -26,7 +26,7 @@ impl InitiDial {
 }
 
 fn main() {
-    let mut start: InitiDial = InitiDial { value: 50, zeros: 0 };
+    let mut start: InitDial = InitDial { value: 50, zeros: 0 };
     let dials: Vec<&str> = vec!["L68", "L30", "R48", "L5", "R60", "L55", "L1", "L99", "R14", "L82"];
     
     for dial in &dials {
