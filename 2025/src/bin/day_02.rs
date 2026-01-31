@@ -51,6 +51,6 @@ impl Input {
                 return true;
             }
         }
-        return false;
+        false
     }
 }
