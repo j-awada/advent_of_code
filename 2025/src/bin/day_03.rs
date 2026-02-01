@@ -61,7 +61,6 @@ fn main() {
     // we don't need the first arg: the bin name
     args.next();
     let input_file: String = args.next().expect("No input file given.");
-
     let input_file_lines: Vec<String> = read_file_to_lines(input_file);
 
     let mut max_total_pairs: i64 = 0;
